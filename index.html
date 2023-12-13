@@ -1,17 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <!-- normliaz css stylesheet -->
-    <link rel="stylesheet" href="css/normliaz.css">
+    <link rel="stylesheet" href="css/normliaz.css" />
     <!-- all main css stylesheet -->
-    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/all.min.css" />
     <!-- main css stylesheet -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <title>Music Player</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="music-one">
+          <div class="music-container">
+            <div class="imgs">
+              <img src="imgs/just-the-two-of-us.png" alt="" />
+            </div>
+            <div class="music-content">
+              <h3>just the two of us</h3>
+              <p>Grover Washington Jr.</p>
+            </div>
+            <div class="audio-area">
+              <!-- <span class="played-time">00:00</span>
+                    <span class="duration-time">00:00</span> -->
+              <audio src="music/Just-The-Two-Of-Us.mp3" id="song"></audio>
+              <div class="after-container">
+                <input type="range" id="progress" />
+                <div class="after"></div>
+              </div>
+              <div class="buttons">
+                <i class="fa-solid fa-backward-step back"></i>
+                <i
+                  onclick="playPause()"
+                  id="play"
+                  class="fa-solid fa-play icon-style"
+                ></i>
+                <i
+                  id="pause"
+                  onclick="playPause()"
+                  class="fa-solid fa-pause active pussy icon-style"
+                ></i>
+                <i class="fa-solid fa-forward-step next"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>

@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Cairo", sans-serif;
+}
+.main {
+  background: linear-gradient(45deg, #c93b76, #212936);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.main .container {
+  max-width: 70%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.main .container .music-one {
+  padding: 20px;
+  background-color: #212936;
+  border-radius: 15px;
+  color: white;
+}
+.main .container .music-one .music-container .imgs {
+  width: 300px;
+}
+.main .container .music-one .music-container .imgs img {
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+.main .container .music-one .music-container .imgs img {
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+.main .container .music-one .music-container .music-content h3 {
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 3px;
+}
+.main .container .music-one .music-container .music-content p {
+  color: #4d5562;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+.after-container {
+  position: relative;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: white;
+  height: 5px;
+}
+
+#progress {
+  -webkit-appearance: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: transparent;
+  width: 100%;
+  cursor: pointer;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 5px;
+  border: 1px solid #4d5562;
+  border-radius: 5px;
+}
+#progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #c93b76;
+  width: 8px;
+  height: 5px;
+  /* border-radius: 50%; */
+  border: 5px solid #c93b76;
+  box-shadow: 0 5px 5px rgba(255, 26, 26, 0.5);
+}
+.after {
+  position: absolute;
+  height: 5px;
+  background-color: #c93b76;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.main .container .music-one .music-container .audio-area .buttons {
+  margin-top: 30px;
+}
+.main .container .music-one .music-container .audio-area .buttons .back,
+.main .container .music-one .music-container .audio-area .buttons .next {
+  color: #4d5562;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px;
+}
+.main .container .music-one .music-container .audio-area .buttons .icon-style {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 15px;
+  background-color: #c93b76;
+  padding: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.main .container .music-one .music-container .audio-area .buttons .active {
+  display: none;
+}
