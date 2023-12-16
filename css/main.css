@@ -28,7 +28,7 @@ html {
   color: white;
 }
 .main .container .music-box .music-container .imgs {
-  width: 200px;
+  width: 400px;
 }
 /* mobile screens */
 @media (min-width: 320px) and (max-width: 480px) {
