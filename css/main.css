@@ -21,41 +21,53 @@ html {
   margin: 0 auto;
   overflow: hidden;
 }
-.main .container .music-one {
+.main .container .music-box {
   padding: 20px;
   background-color: #212936;
   border-radius: 15px;
   color: white;
 }
-.main .container .music-one .music-container .imgs {
-  width: 300px;
+.main .container .music-box .music-container .imgs {
+  width: 400px;
 }
-.main .container .music-one .music-container .imgs img {
+/* mobile screens */
+@media (min-width: 320px) and (max-width: 480px) {
+  .main .container .music-box .music-container .imgs {
+    width: 100%;
+  }
+}
+/* tablets screens */
+@media (min-width: 481px) and (max-width: 768px) {
+  .main .container .music-box .music-container .imgs {
+    width: 100%;
+  }
+}
+.main .container .music-box .music-container .imgs img {
   max-width: 100%;
   margin: 0 auto;
   border-radius: 15px;
   margin-bottom: 15px;
 }
-.main .container .music-one .music-container .imgs img {
+.main .container .music-box .music-container .imgs img {
   max-width: 100%;
   margin: 0 auto;
   border-radius: 15px;
   margin-bottom: 15px;
 }
-.main .container .music-one .music-container .music-content {
+.main .container .music-box .music-container .music-content {
   text-transform: capitalize;
 }
-.main .container .music-one .music-container .music-content h3 {
+.main .container .music-box .music-container .music-content h3 {
   font-weight: 600;
   text-transform: capitalize;
   margin-bottom: 3px;
 }
-.main .container .music-one .music-container .music-content p {
+.main .container .music-box .music-container .music-content p {
   color: #4d5562;
   font-size: 15px;
   margin-bottom: 15px;
 }
-.main .container .music-one .music-container .audio-area .time {
+.main .container .music-box .music-container .audio-area .time {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -106,17 +118,17 @@ html {
   border-bottom-left-radius: 5px;
   box-shadow: 1px 1px 0.4em 1px #b7366b40, 1px 1px 0.4em 2px #b7366b40;
 }
-.main .container .music-one .music-container .audio-area .buttons {
+.main .container .music-box .music-container .audio-area .buttons {
   margin-top: 30px;
 }
-.main .container .music-one .music-container .audio-area .buttons .back,
-.main .container .music-one .music-container .audio-area .buttons .next {
+.main .container .music-box .music-container .audio-area .buttons .back,
+.main .container .music-box .music-container .audio-area .buttons .next {
   color: #4d5562;
   cursor: pointer;
   font-size: 20px;
   padding: 10px;
 }
-.main .container .music-one .music-container .audio-area .buttons .icon-style {
+.main .container .music-box .music-container .audio-area .buttons .icon-style {
   margin-left: 20px;
   margin-right: 20px;
   font-size: 15px;
@@ -126,6 +138,23 @@ html {
   cursor: pointer;
   box-shadow: 1px 1px 0.4em 1px #b7366b40, 1px 1px 0.4em 2px #b7366b40;
 }
-.main .container .music-one .music-container .audio-area .buttons .active {
+.main .container .music-box .music-container .audio-area .buttons .active {
   display: none;
 }
+/* start media query */
+/* mobile screens */
+@media (min-width: 320px) and (max-width: 480px) {
+}
+/* tablets screens */
+@media (min-width: 481px) and (max-width: 768px) {
+}
+/* meduim screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+/* large screens */
+@media (min-width: 1025px) and (max-width: 1200px) {
+}
+/* extra large screens */
+@media (min-width: 1201px) {
+}
+/* end media query */

@@ -56,18 +56,30 @@ function isPlaying(audelem) {
 }
 
 let myPlayList = {
-  names: ["just the two of us", "fly me to the moon", "million years ago"],
+  names: [
+    "just the two of us",
+    "Until I Found You",
+    "fly me to the moon",
+    "million years ago",
+  ],
   songs: [
     "music/Just-The-Two-Of-Us.mp3",
+    "music/Until-I-Found-You.mp3",
     "music/Fly-Me-To-The-Moon.mp3",
     "music/Million-Years-Ago.mp3",
   ],
   images: [
     "imgs/just-the-two-of-us.png",
+    "imgs/until-i-found-you.png",
     "imgs/fly-me-to-the-moon.png",
     "imgs/million-years-ago.png",
   ],
-  artists: ["Grover Washington Jr.", "Frank Sinatra", "adele"],
+  artists: [
+    "Grover Washington Jr.",
+    "stephen sanchez & em beihold",
+    "Frank Sinatra",
+    "adele",
+  ],
   currentIndex: 0,
 };
 
