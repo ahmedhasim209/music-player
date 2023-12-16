@@ -7,7 +7,7 @@ html {
   font-family: "Cairo", sans-serif;
 }
 .main {
-  background: linear-gradient(45deg, #c93b76, #212936);
+  background: linear-gradient(45deg, #8f3b5e, #212b3c 65%);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -42,6 +42,9 @@ html {
   border-radius: 15px;
   margin-bottom: 15px;
 }
+.main .container .music-one .music-container .music-content {
+  text-transform: capitalize;
+}
 .main .container .music-one .music-container .music-content h3 {
   font-weight: 600;
   text-transform: capitalize;
@@ -52,14 +55,23 @@ html {
   font-size: 15px;
   margin-bottom: 15px;
 }
+.main .container .music-one .music-container .audio-area .time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  margin-bottom: 3px;
+  color: #4d5562;
+}
+
 .after-container {
   position: relative;
   margin: 0 auto;
   border-radius: 5px;
   background-color: white;
   height: 5px;
+  width: 100%;
 }
-
 #progress {
   -webkit-appearance: none;
   position: absolute;
@@ -80,7 +92,6 @@ html {
   background: #c93b76;
   width: 8px;
   height: 5px;
-  /* border-radius: 50%; */
   border: 5px solid #c93b76;
   box-shadow: 0 5px 5px rgba(255, 26, 26, 0.5);
 }
@@ -93,6 +104,7 @@ html {
   z-index: 0;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  box-shadow: 1px 1px 0.4em 1px #b7366b40, 1px 1px 0.4em 2px #b7366b40;
 }
 .main .container .music-one .music-container .audio-area .buttons {
   margin-top: 30px;
@@ -112,6 +124,7 @@ html {
   padding: 20px;
   border-radius: 50%;
   cursor: pointer;
+  box-shadow: 1px 1px 0.4em 1px #b7366b40, 1px 1px 0.4em 2px #b7366b40;
 }
 .main .container .music-one .music-container .audio-area .buttons .active {
   display: none;
