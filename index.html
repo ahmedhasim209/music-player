@@ -36,15 +36,24 @@
               <p>Grover Washington Jr.</p>
             </div>
             <div class="audio-area">
-              <!-- <span class="played-time">00:00</span>
-                    <span class="duration-time">00:00</span> -->
-              <audio src="music/Just-The-Two-Of-Us.mp3" id="song"></audio>
+              <div class="time">
+                <span class="played-time">00:00</span>
+                <span class="duration-time">00:00</span>
+              </div>
+              <audio
+                data-index="0"
+                src="music/Just-The-Two-Of-Us.mp3"
+                id="song"
+              ></audio>
               <div class="after-container">
                 <input type="range" id="progress" />
                 <div class="after"></div>
               </div>
               <div class="buttons">
-                <i class="fa-solid fa-backward-step back"></i>
+                <i
+                  onclick="playpervSong()"
+                  class="fa-solid fa-backward-step back"
+                ></i>
                 <i
                   onclick="playPause()"
                   id="play"
@@ -53,9 +62,12 @@
                 <i
                   id="pause"
                   onclick="playPause()"
-                  class="fa-solid fa-pause active pussy icon-style"
+                  class="fa-solid fa-pause active icon-style"
                 ></i>
-                <i class="fa-solid fa-forward-step next"></i>
+                <i
+                  onclick="playNextSong()"
+                  class="fa-solid fa-forward-step next"
+                ></i>
               </div>
             </div>
           </div>
